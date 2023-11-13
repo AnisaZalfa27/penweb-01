@@ -1,0 +1,22 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 100px;
+
+}
+
+.service{
+    padding: 150px;
+    display: block;
+    text-align: justify;
+   
+    
+    
+}
+
+td{
+    padding: 15px;
+}
+
+fieldset{
+    background-color: bisque;
+}
