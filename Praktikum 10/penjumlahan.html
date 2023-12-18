@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>menghitung kurs dolar</title>
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <script>
+            function calc(){
+                var n1 = parseInt(document.getElementById("n1").value);
+                var n2 = parseInt(document.getElementById("n2").value);
+                var oper = document.getElementById("operators").value;
+
+                if(oper === '+')
+                {
+                    var n2 = document.getElementById("result").value = n1+n2;
+                }
+            }
+        </script>
+    </head>
+    <body>
+       <input type="text" id="n1"><br>
+       <br>
+
+       <select id="operators">
+        <option value="+">+</option>
+       </select>
+       <br>
+       <input type="text" id="n2"><br>
+       <br>
+       <input type="text" id="result">
+       <br>
+
+       <button onclick="calc();">=</button>
+    </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menghitung Kurs</title>
+</head>
+
+<body>
+    <h1>Menghitung Kurs</h1>
+    <br>
+    <div>
+        <label for="dollar">Masukkan Nilai Rupiah:</label>
+        <input type="number" id="dollar">
+        <button onclick="hitungLingkaran()">Hitung!</button>
+    </div>
+
+    <hr>
+
+    <p>Nilai Dollar: <span id="hasilKursDollar">0</span>$</p>
+
+    <script>
+
+        function hitungLingkaran() {
+            const kursDollar = 14650
+            let nilai = document.getElementById("dollar").value
+            let kurs = nilai / kursDollar
+            let hasilKursDollar = document.getElementById("hasilKursDollar")
+
+            hasilKursDollar.innerHTML = kurs
+        }
+    </script>
+</body>
+</html>
