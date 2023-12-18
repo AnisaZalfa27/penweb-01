@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header, footer{
+    height: 20vh;
+    background-color: #f0e68c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 80px;
+}
+
+.content{
+    height: 60vh;
+    display: flex;
+}
+
+article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+aside{
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav{
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}

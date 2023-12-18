@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <title>Form Pesanan Pizza</title>
+    </head>
+
+    <fieldset>
+    <body>
+        <h1>Black Goose Bistro | Pizza-on-Demond</h1>
+        <br>
+        <p>Our 12" wood-fired pizzas are available for delivery. Build your custom pizza abd we'll deliver it within an hour.</p>
+        <br>
+        <p>Your Information</p>
+        <form action="http://blackgoosebistro.com/pizza.php" method="post">
+
+        <table>
+            <tr>
+                <td>Name :</td>
+                <td><input type="text" name="customername"></td>
+            </tr>
+            <tr>
+                <td>Addres :</td>
+                <td><textarea name="address" id="addres" cols="30" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <td>Telp:</td>
+                <td><input type="number" name="telephone"></td>
+            </tr>
+            <tr>
+                <td>email :</td>
+                <td><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <td>Instuctions :</td>
+                <td><textarea name="Instuctions" id="Instuctions" cols="30" rows="5"></textarea></td>
+
+            </tr>
+        </table>
+        <p><b>Desain Your Dream Pizza:</b><br>pizza spech</p>
+        <label for="crust">crust(choose one)</label><br>
+        <input type="radio" name="crust" value="Classic White">Classic White<br>
+        <input type="radio" name="crust" value="Multigrain">Multigrain<br>
+        <input type="radio" name="crust" value="Cheese-Stuffed Crust">Cheese-Stuffed-Crust<br>
+        <input type="radio" name="crust" value="Gluten-Free">Glutten-Free<br>
+        <br>
+        <label for="Toppings">Toppings(Choose as many as you want)</label><br>
+        <input type="checkbox" name="Toppings"[] value="Red Sauce">Red Sauce<br>
+        <input type="checkbox" name="Toppings"[] value="White Sauce">White Sauce<br>
+        <input type="checkbox" name="Toppings"[] value="Mozarella Cheese">Mozarella Cheese<br>
+        <input type="checkbox" name="Toppings"[] value="Pepperoni">Pepperoni<br>
+        <input type="checkbox" name="Toppings"[] value="Mushrooms">Mushrooms<br>
+        <input type="checkbox" name="Toppings"[] value="Peppers">Peppers<br>
+        <input type="checkbox" name="Toppings"[] value="Anchovies">Anchovies<br>
+        <br>
+        <input type="submit" value="Bring me a pizza">
+        <input type="reset">
+    </fieldset>
+
+
+
+
+    </body>
+</html>
