@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Picker</title>
+  <style>
+    #image-container {
+      margin-top: 20px;
+    }
+
+    #selected-image {
+      max-width: 100%;
+      max-height: 200px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Image Picker</h1>
+
+  <hr>
+
+  <label for="image-dropdown">Pilih Gambar:</label>
+  <select id="image-dropdown" onchange="showSelectedImage()">
+    <option value="Burung Merak.jpg">merak</option>
+    <option value="singa.jpg">singa</option>
+    <option value="kelinci.jpg">kelinci</option>
+    <option value="gajah.jpg">gajah</option>
+    <option value="zebra.jpg">zebra</option>
+    <option value="badak.jpg">badak</option>
+    
+
+   
+  </select>
+
+  <div id="image-container">
+    <h3>Preview Gambar:</h3>
+    <img id="selected-image" src="" alt="Selected Image">
+  </div>
+
+  <script>
+    function showSelectedImage() {
+      // Dapatkan elemen dropdown dan nilai terpilih
+      var dropdown = document.getElementById("image-dropdown");
+      var selectedValue = dropdown.options[dropdown.selectedIndex].value;
+
+      // Dapatkan elemen gambar dan setel atribut src
+      var image = document.getElementById("selected-image");
+      image.src = selectedValue;
+
+      // Tampilkan kotak alert dengan nama file gambar
+      alert("Ini Adalah Gambar: " + selectedValue);
+    }
+  </script>
+
+</body>
+</html>
